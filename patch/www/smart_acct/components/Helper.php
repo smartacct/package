@@ -48,6 +48,7 @@ public static function decimal_to_words($x)
 	$tmp_str_rtn = Helper::number_to_words ($x);
 	//if(!empty($decimalpart) && $decimalpart !='00')
 		//$tmp_str_rtn .= ' rupees and '  . Helper::number_to_words ($decimalpart) . ' paise';
+	$tmp_str_rtn .= " ONLY";	
 	return   strtoupper($tmp_str_rtn);
 } 
 
